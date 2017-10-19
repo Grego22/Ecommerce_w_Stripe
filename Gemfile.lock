@@ -6,6 +6,13 @@ GIT
     bootstrap-generators (3.3.4)
       railties (>= 3.1.0)
 
+GIT
+  remote: https://github.com/stripe/stripe-ruby
+  revision: 987bbd09c07a66a4be839f0ecc6d6f14ab2db811
+  specs:
+    stripe (3.6.0)
+      faraday (~> 0.10)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -72,6 +79,8 @@ GEM
       railties (>= 3.2, < 5.2)
     erubi (1.7.0)
     execjs (2.7.0)
+    faraday (0.13.1)
+      multipart-post (>= 1.2, < 3)
     ffi (1.9.18)
     font-awesome-rails (4.7.0.2)
       railties (>= 3.2, < 5.2)
@@ -101,6 +110,7 @@ GEM
     mini_mime (0.1.4)
     mini_portile2 (2.3.0)
     minitest (5.10.3)
+    multipart-post (2.0.0)
     nio4r (2.1.0)
     nokogiri (1.8.1)
       mini_portile2 (~> 2.3.0)
@@ -203,6 +213,7 @@ DEPENDENCIES
   rails_12factor
   sass-rails (~> 5.0)
   selenium-webdriver
+  stripe!
   tzinfo-data
   uglifier (>= 1.3.0)
   web-console (>= 3.3.0)
@@ -211,4 +222,4 @@ RUBY VERSION
    ruby 2.4.1p111
 
 BUNDLED WITH
-   1.15.4
+   1.16.0.pre.3
