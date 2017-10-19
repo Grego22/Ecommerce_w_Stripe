@@ -1,5 +1,7 @@
 {
   "name": "basic_ecommerce_w_stripe",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "yarn": "^1.2.1"
+  }
 }
