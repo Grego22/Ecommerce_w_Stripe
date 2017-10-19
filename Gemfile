@@ -1,3 +1,4 @@
+#Heroku should use this version of ruby
 ruby '2.4.1'
 source 'https://rubygems.org'
 
@@ -49,7 +50,7 @@ group :development do
   gem 'awesome_print'
   gem 'dotenv-rails'
 end
-
+#12 factor for heroku
 group :production do
   gem 'rails_12factor'
 end
