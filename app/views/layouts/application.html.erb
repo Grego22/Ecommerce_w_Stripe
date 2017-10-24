@@ -4,23 +4,30 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, user-scalable=no">
-	<title>LearnRailsPayments</title>
-    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300,800' >
+      <title>Ecommerce Stripe</title>
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800'>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <script src="https://checkout.stripe.com/checkout.js"></script>
   </head>
 
   <body>
   <div id="content" class="container">
     <header id="content-header">
-    
+      <%= link_to products_path do %>
+        <div id="price-container">
+          <span class="glyphicon glyphicon-tag"></span><span class="price">$4.99</span>
+        </div>
+        <%= image_tag('ubud-greg.jpg', id: "content-head-img", alt: "Header Image") %>
+      <% end %>
     </header>
     <%= yield %>
   </div>
+
   <footer id="site-footer">
-Made by <a href="#" target="_blank">Learn App Code</a>
-</footer>
+    Made by <a href="#" target="_blank">Tonnam Balankura</a>
+  </footer>
   </body>
 </html>
