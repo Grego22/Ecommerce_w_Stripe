@@ -54,6 +54,7 @@ ActiveRecord::Schema.define(version: 20171024012800) do
     t.string "details"
     t.string "sku"
     t.decimal "price"
+    t.text "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
