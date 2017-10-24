@@ -5,5 +5,5 @@ Rails.application.routes.draw do
   root 'products#index'
   resources :charges
   resources :purchases, only: [:show]
-  resources :products, only: [:index, :show]
+  resources :products, only: [:index]
 end
